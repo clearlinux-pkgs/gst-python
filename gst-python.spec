@@ -6,7 +6,7 @@
 #
 Name     : gst-python
 Version  : 1.18.4
-Release  : 1
+Release  : 2
 URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.4.tar.xz
 Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.4.tar.xz
 Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.4.tar.xz.asc
