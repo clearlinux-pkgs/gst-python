@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x5D2EEE6F6F349D7C (tim@centricular.com)
 #
 Name     : gst-python
-Version  : 1.18.4
-Release  : 3
-URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.4.tar.xz
-Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.4.tar.xz
-Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.4.tar.xz.asc
+Version  : 1.18.5
+Release  : 4
+URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
+Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
+Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -71,23 +71,23 @@ python3 components for the gst-python package.
 
 
 %prep
-%setup -q -n gst-python-1.18.4
-cd %{_builddir}/gst-python-1.18.4
+%setup -q -n gst-python-1.18.5
+cd %{_builddir}/gst-python-1.18.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1621864739
+export SOURCE_DATE_EPOCH=1631205597
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddir
 ninja -v -C builddir
 
@@ -100,7 +100,7 @@ meson test -C builddir || :
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gst-python
-cp %{_builddir}/gst-python-1.18.4/COPYING %{buildroot}/usr/share/package-licenses/gst-python/a38bf62fc86fcde6fe8b09b6a8732d3c24edfd95
+cp %{_builddir}/gst-python-1.18.5/COPYING %{buildroot}/usr/share/package-licenses/gst-python/a38bf62fc86fcde6fe8b09b6a8732d3c24edfd95
 DESTDIR=%{buildroot} ninja -C builddir install
 
 %files
