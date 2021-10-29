@@ -4,5 +4,6 @@ gstreamer-dev
 pkgconfig(gstreamer-1.0)
 pkgconfig(gstreamer-plugins-base-1.0)
 pkgconfig(pygobject-3.0)
+pkgconfig(python-3.10-embed)
 pkgconfig(python-3.9-embed)
 python3-dev

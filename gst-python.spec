@@ -6,7 +6,7 @@
 #
 Name     : gst-python
 Version  : 1.18.5
-Release  : 7
+Release  : 8
 URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
 Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
 Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz.asc
@@ -29,7 +29,7 @@ BuildRequires : numpy
 BuildRequires : pkgconfig(gstreamer-1.0)
 BuildRequires : pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires : pkgconfig(pygobject-3.0)
-BuildRequires : pkgconfig(python-3.9-embed)
+BuildRequires : pkgconfig(python-3.10-embed)
 BuildRequires : python3-dev
 
 %description
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1631205597
+export SOURCE_DATE_EPOCH=1635519003
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -96,7 +96,7 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-meson test -C builddir || :
+meson test -C builddir --print-errorlogs || :
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gst-python
