@@ -6,7 +6,7 @@
 #
 Name     : gst-python
 Version  : 1.18.5
-Release  : 8
+Release  : 9
 URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
 Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
 Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz.asc
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635519003
+export SOURCE_DATE_EPOCH=1635738178
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
