@@ -6,4 +6,8 @@ pkgconfig(gstreamer-plugins-base-1.0)
 pkgconfig(pygobject-3.0)
 pkgconfig(python-3.10-embed)
 pkgconfig(python-3.9-embed)
+pypi(matplotlib)
+pypi(numpy)
+pypi(numpy_ringbuffer)
+pypi(pillow)
 python3-dev

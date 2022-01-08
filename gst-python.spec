@@ -6,7 +6,7 @@
 #
 Name     : gst-python
 Version  : 1.18.5
-Release  : 10
+Release  : 11
 URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
 Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz
 Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.18.5.tar.xz.asc
@@ -17,19 +17,17 @@ Requires: gst-python-lib = %{version}-%{release}
 Requires: gst-python-license = %{version}-%{release}
 Requires: gst-python-python = %{version}-%{release}
 Requires: gst-python-python3 = %{version}-%{release}
-Requires: Pillow
-Requires: matplotlib
-Requires: numpy
-BuildRequires : Pillow
 BuildRequires : buildreq-meson
 BuildRequires : gst-plugins-base-dev
 BuildRequires : gstreamer-dev
-BuildRequires : matplotlib
-BuildRequires : numpy
 BuildRequires : pkgconfig(gstreamer-1.0)
 BuildRequires : pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires : pkgconfig(pygobject-3.0)
 BuildRequires : pkgconfig(python-3.10-embed)
+BuildRequires : pypi(matplotlib)
+BuildRequires : pypi(numpy)
+BuildRequires : pypi(numpy_ringbuffer)
+BuildRequires : pypi(pillow)
 BuildRequires : python3-dev
 
 %description
@@ -79,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635738178
+export SOURCE_DATE_EPOCH=1641669232
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
