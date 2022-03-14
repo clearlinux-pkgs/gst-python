@@ -1,10 +1,6 @@
-1.20.0
+1.20.1
 gst-plugins-base-dev
 gstreamer-dev
 pkgconfig(gstreamer-1.0)
 pkgconfig(gstreamer-plugins-base-1.0)
 pkgconfig(pygobject-3.0)
-pypi(matplotlib)
-pypi(numpy)
-pypi(numpy_ringbuffer)
-pypi(pillow)
