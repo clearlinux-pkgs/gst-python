@@ -1,0 +1,3 @@
+pypi(matplotlib)
+pypi(numpy)
+pypi(numpy_ringbuffer)

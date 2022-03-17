@@ -6,7 +6,7 @@
 #
 Name     : gst-python
 Version  : 1.20.1
-Release  : 13
+Release  : 15
 URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.1.tar.xz
 Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.1.tar.xz
 Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.1.tar.xz.asc
@@ -23,9 +23,6 @@ BuildRequires : gstreamer-dev
 BuildRequires : pkgconfig(gstreamer-1.0)
 BuildRequires : pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires : pkgconfig(pygobject-3.0)
-BuildRequires : pypi(matplotlib)
-BuildRequires : pypi(numpy)
-BuildRequires : pypi(numpy_ringbuffer)
 BuildRequires : pypi(pillow)
 BuildRequires : python3-dev
 
@@ -62,9 +59,6 @@ python components for the gst-python package.
 Summary: python3 components for the gst-python package.
 Group: Default
 Requires: python3-core
-Requires: pypi(matplotlib)
-Requires: pypi(numpy)
-Requires: pypi(numpy_ringbuffer)
 Requires: pypi(pillow)
 
 %description python3
@@ -80,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1647285172
+export SOURCE_DATE_EPOCH=1647531218
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
