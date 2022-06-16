@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x5D2EEE6F6F349D7C (tim@centricular.com)
 #
 Name     : gst-python
-Version  : 1.20.2
-Release  : 16
-URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.2.tar.xz
-Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.2.tar.xz
-Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.2.tar.xz.asc
+Version  : 1.20.3
+Release  : 17
+URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.3.tar.xz
+Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.3.tar.xz
+Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.3.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -66,15 +66,15 @@ python3 components for the gst-python package.
 
 
 %prep
-%setup -q -n gst-python-1.20.2
-cd %{_builddir}/gst-python-1.20.2
+%setup -q -n gst-python-1.20.3
+cd %{_builddir}/gst-python-1.20.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1651589362
+export SOURCE_DATE_EPOCH=1655390894
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -95,7 +95,7 @@ meson test -C builddir --print-errorlogs || :
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gst-python
-cp %{_builddir}/gst-python-1.20.2/COPYING %{buildroot}/usr/share/package-licenses/gst-python/a38bf62fc86fcde6fe8b09b6a8732d3c24edfd95
+cp %{_builddir}/gst-python-1.20.3/COPYING %{buildroot}/usr/share/package-licenses/gst-python/a38bf62fc86fcde6fe8b09b6a8732d3c24edfd95
 DESTDIR=%{buildroot} ninja -C builddir install
 
 %files
