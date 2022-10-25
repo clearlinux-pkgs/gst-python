@@ -6,7 +6,7 @@
 #
 Name     : gst-python
 Version  : 1.20.4
-Release  : 18
+Release  : 19
 URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.4.tar.xz
 Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.4.tar.xz
 Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.4.tar.xz.asc
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1666125674
+export SOURCE_DATE_EPOCH=1666733512
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -95,7 +95,7 @@ meson test -C builddir --print-errorlogs || :
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gst-python
-cp %{_builddir}/gst-python-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gst-python/a38bf62fc86fcde6fe8b09b6a8732d3c24edfd95
+cp %{_builddir}/gst-python-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gst-python/a38bf62fc86fcde6fe8b09b6a8732d3c24edfd95 || :
 DESTDIR=%{buildroot} ninja -C builddir install
 
 %files
