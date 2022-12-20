@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x5D2EEE6F6F349D7C (tim@centricular.com)
 #
 Name     : gst-python
-Version  : 1.20.4
-Release  : 19
-URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.4.tar.xz
-Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.4.tar.xz
-Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.4.tar.xz.asc
+Version  : 1.20.5
+Release  : 20
+URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.5.tar.xz
+Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.5.tar.xz
+Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.20.5.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -66,15 +66,15 @@ python3 components for the gst-python package.
 
 
 %prep
-%setup -q -n gst-python-1.20.4
-cd %{_builddir}/gst-python-1.20.4
+%setup -q -n gst-python-1.20.5
+cd %{_builddir}/gst-python-1.20.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1666733512
+export SOURCE_DATE_EPOCH=1671552983
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
