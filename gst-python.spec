@@ -7,7 +7,7 @@
 #
 Name     : gst-python
 Version  : 1.22.3
-Release  : 24
+Release  : 25
 URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.3.tar.xz
 Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.3.tar.xz
 Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.3.tar.xz.asc
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684510548
+export SOURCE_DATE_EPOCH=1685547799
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
