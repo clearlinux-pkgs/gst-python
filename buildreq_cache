@@ -1,7 +1,6 @@
-1.22.6
+1.22.7
 gst-plugins-base-dev
 gstreamer-dev
 pkgconfig(gstreamer-1.0)
 pkgconfig(gstreamer-plugins-base-1.0)
 pkgconfig(pygobject-3.0)
-pypi(imp)
