@@ -8,11 +8,11 @@
 # Source0 file verified with key 0x5D2EEE6F6F349D7C (tim@centricular.com)
 #
 Name     : gst-python
-Version  : 1.22.7
-Release  : 31
-URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.7.tar.xz
-Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.7.tar.xz
-Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.7.tar.xz.asc
+Version  : 1.22.8
+Release  : 32
+URL      : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.8.tar.xz
+Source0  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.8.tar.xz
+Source1  : https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.8.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -70,10 +70,10 @@ python3 components for the gst-python package.
 
 
 %prep
-%setup -q -n gst-python-1.22.7
-cd %{_builddir}/gst-python-1.22.7
+%setup -q -n gst-python-1.22.8
+cd %{_builddir}/gst-python-1.22.8
 pushd ..
-cp -a gst-python-1.22.7 buildavx2
+cp -a gst-python-1.22.8 buildavx2
 popd
 
 %build
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1701965978
+export SOURCE_DATE_EPOCH=1702919121
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
