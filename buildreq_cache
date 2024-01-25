@@ -1,4 +1,4 @@
-1.22.8
+1.22.9
 gst-plugins-base-dev
 gstreamer-dev
 pkgconfig(gstreamer-1.0)
