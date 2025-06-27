@@ -1,6 +1,5 @@
-1.24.12
-gst-plugins-base-dev
+1.26.3
 gstreamer-dev
 pkgconfig(gstreamer-1.0)
-pkgconfig(gstreamer-plugins-base-1.0)
+pkgconfig(gstreamer-analytics-1.0)
 pkgconfig(pygobject-3.0)
